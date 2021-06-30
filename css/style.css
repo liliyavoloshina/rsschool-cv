@@ -4,15 +4,11 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-}
-
-header, footer {
-  background: #861657;
+  background: #fffbff;
 }
 
 a {
-  text-decoration: none;
-  color: #861657;
+  color: #3f3f3f;
 }
 
 .wrapper {
@@ -21,10 +17,6 @@ a {
   margin-right: auto;
   padding-top: 1em;
   padding-bottom: 1em;
-}
-
-header h1 {
-  margin-top: 0px;
 }
 .container {
 	display: grid;
@@ -36,8 +28,19 @@ header h1 {
 aside {
   display: flex;
   flex-direction: column;
-  background: #aa4465;
+  background: #d3ab9e;
 }
+
+aside h1 {
+  font-size: 2em;
+}
+aside ul {
+  padding-left: 2em;
+}
+aside ul li {
+  margin-bottom: 1em;
+}
+
 .cv-image {
   margin: 0;
 }
@@ -59,12 +62,19 @@ ul {
 
 
 main { 
-  background: #ffa69e;
+  background: #ebd8d0;
   padding-left: 2em;
 }
 
 section {
   margin-top: 2em;
+}
+
+header, footer {
+  padding: 1em 2em;
+}
+footer {
+  background: #eac9c1;
 }
 
 footer .wrapper {
