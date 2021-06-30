@@ -7,7 +7,12 @@ body {
 }
 
 header, footer {
-  background: #f4decb;
+  background: #861657;
+}
+
+a {
+  text-decoration: none;
+  color: #861657;
 }
 
 .wrapper {
@@ -31,7 +36,7 @@ header h1 {
 aside {
   display: flex;
   flex-direction: column;
-  background:red;
+  background: #aa4465;
 }
 .cv-image {
   margin: 0;
@@ -54,7 +59,7 @@ ul {
 
 
 main { 
-  background: pink;
+  background: #ffa69e;
   padding-left: 2em;
 }
 
