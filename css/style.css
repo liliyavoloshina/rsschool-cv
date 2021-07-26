@@ -9,6 +9,10 @@
   box-sizing: border-box;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   margin: 0;
   font-family: var(--main-font);
@@ -140,6 +144,11 @@ main h2 {
     padding-left: 0;
     padding-top: 1em;
   }
+}
+
+.skills-section ul {
+  line-height: 1.5;
+  list-style-type: disc;
 }
 
 section {
