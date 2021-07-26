@@ -146,7 +146,7 @@ main h2 {
   }
 }
 
-.skills-section ul {
+.skills-section ul, .edu-section ul {
   line-height: 1.5;
   list-style-type: disc;
 }
