@@ -5,7 +5,11 @@
 * [Github](https://github.com/liliyavoloshina)
 
 ## About me
-I am looking for a job as a front-end developer, where I could improve my skills and work on interesting projects
+Self-taught frontend-developer with a year of experience using JavaScript, HTML, CSS.
+<br/>
+I enjoy solving difficult tasks and always try to find the best solution to the problem.
+<br/>
+While working as a freelancer, I have improved my time management skills and ability to work with minimum supervision.
 
 ## My skills
 * HTML
@@ -19,7 +23,7 @@ For about six months I worked as a freelancer and completed many different proje
 Also i did some small javascript projects, and a bunch of pet-projects. E.g.: [Thrift Shop](https://thrift-shop.herokuapp.com/), [Simple Shop](https://simple-shop-sample.herokuapp.com/home) (*you can find more in my repository*).
 
 ## English Level
-My level of English is B2
+My English level is B1
 
 ## Code example
 My favorite piece of code is an example of data encryption:
