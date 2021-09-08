@@ -70,6 +70,10 @@ body::-webkit-scrollbar-thumb {
           backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
 }
 
+.section {
+  padding: 5em 0;
+}
+
 body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
@@ -229,4 +233,10 @@ body {
 .opened .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -6px);
           transform: rotate(45deg) translate(-8px, -6px);
+}
+
+.about__img {
+  width: 10em;
+  height: 20em;
+  border-radius: 100%;
 }
