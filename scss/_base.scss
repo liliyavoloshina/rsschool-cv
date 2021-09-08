@@ -73,7 +73,8 @@ a {
   position: relative;
   height: auto;
   margin: 0 20px;
-  color: #333;
+  z-index: 1000;
+  color: #fff;
   font-size: 16px;
   padding: 3em;
   border: 1px solid #fff;

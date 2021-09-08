@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lily CV</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
 </head>
 
 <body>
@@ -20,9 +20,9 @@
         </div>
         <nav class="header__nav">
           <button class="nav__menu" title="Menu" id="navBtn">
-            <div class="bar1 bar"></div>
-            <div class="bar2 bar"></div>
-            <div class="bar3 bar"></div>
+            <span class="bar1 bar"></span>
+            <span class="bar2 bar"></span>
+            <span class="bar3 bar"></span>
           </button>
           <ul class="nav__list" id="navList">
             <li><a class="nav__link" href="#about">About</a></li>
@@ -98,7 +98,7 @@
               </article>
             </div>
           </section>
-  
+
           <section class="section education" id="education">
             <h2 class="section__name">Education</h2>
             <div class="section__content">
@@ -109,7 +109,8 @@
                 <li><a href="https://www.codecademy.com/profiles/liliyaVoloshina1918533430" target="_blank">HTML, CSS
                     Courses</a> - CodeAcademy</li>
                 <li><a href="https://www.sololearn.com/learning/1024" target="_blank">"JavaScript"</a> - SoloLearn</li>
-                <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/">"Responsive Web Design"</a>,<br />
+                <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/">"Responsive Web
+                    Design"</a>,<br />
                   <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
                     target="_blank">"JavaScript
                     Algorithms and Data Structures"</a> - freeCodeCamp</li>
@@ -188,8 +189,7 @@
         <section class="section video" id="video">
           <h2 class="section__name">Video Presentation</h2>
           <div class="section__content video__content">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
@@ -219,13 +219,12 @@
       </footer>
     </div>
   </div>
+
+  <script src="./js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 </body>
-
-<script src="./js/script.js"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
 
 </html>
