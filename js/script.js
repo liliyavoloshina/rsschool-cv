@@ -9,7 +9,7 @@ function toggleMenu() {
 }
 
 document.addEventListener('click', function (event) {
-  if (!event.target.closest('.nav__list') && !event.target.closest('#navBtn')) {
+  if (navList.classList.contains('opened') && !event.target.closest('#navBtn')) {
     navBtn.classList.remove('opened')
     navList.classList.remove('opened')
   }

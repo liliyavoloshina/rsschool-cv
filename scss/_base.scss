@@ -7,7 +7,7 @@
   --blue: #23a6d5;
   --black-text: #333;
   --accent: #e73c7e;
-  --link-color: #23a6d5;
+  --link-color: #FFFFE0;
   --base-fs: 1.3em;
   --head-fs: 1.8em;
 }
@@ -81,6 +81,7 @@ a {
   border-radius: 0.5em;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+
   &:before {
     position: absolute;
     top: 0;
@@ -93,6 +94,10 @@ a {
     z-index: -1;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1em;
   }
 }
 
