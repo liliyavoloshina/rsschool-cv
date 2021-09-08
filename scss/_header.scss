@@ -37,6 +37,9 @@
         top: 5em;
         z-index: 1;
         gap: 1em 0;
+        padding: 2em;
+        border-radius: 20px;
+        background-color: rgba(17, 34, 51, 0.712);;
       }
     }
 
@@ -46,7 +49,8 @@
       color: #fff;
 
       &:hover {
-        color: var(--orange);
+        opacity: 1;
+        color: var(--link-color);
       }
     }
 
@@ -71,6 +75,10 @@
         border-radius: 20px;
         background-color: #fff;
         transition: 0.4s;
+      }
+
+      &:hover .bar {
+        background-color: var(--accent);
       }
 
       @media screen and (max-width: 1024px) {
