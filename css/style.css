@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap");
+:root {
+  --pink: #e73c7e;
+  --orange: #ee7752;
+  --green: #23d5ab;
+  --blue: #23a6d5;
+  --black-text: #333 ;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -108,8 +116,100 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-transform: uppercase;
+  color: #fff;
 }
 
-.header__nav ul {
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+.header__nav .nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav .nav__list {
+    display: none;
+  }
+}
+
+.header__nav .nav__link {
+  text-decoration: none;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  color: var(--black-text);
+}
+
+.header__nav .nav__link:hover {
+  color: var(--orange);
+}
+
+.header__nav .nav__menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 5em;
+  height: 5em;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.header__nav .nav__menu .bar1,
+.header__nav .nav__menu .bar2,
+.header__nav .nav__menu .bar3 {
+  width: 40px;
+  height: 4px;
+  margin: 3px 0;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+  .header__nav .nav__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+          transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -6px);
+          transform: rotate(45deg) translate(-8px, -6px);
 }
