@@ -1,9 +1,45 @@
-.about {
+.main {
+  padding: 3em 0;
+}
 
-  &__img {
-    width: 10em;
-    height: 20em;
-    border-radius: 100%;
+.about {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
   }
 
+  &__img {
+    flex: 250px 0 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+}
+
+.skills {
+  &__list {
+    text-align: center;
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
 }

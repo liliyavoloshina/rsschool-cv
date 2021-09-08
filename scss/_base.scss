@@ -5,7 +5,16 @@
   --orange: #ee7752;
   --green: #23d5ab;
   --blue: #23a6d5;
-  --black-text: #333 ;
+  --black-text: #333;
+  --base-fs: 1.5em;
+  --head-fs: 1.6em;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --base-fs: 1.3em;
+  --head-fs: 1.5em;
+  }
 }
 
 * {
@@ -14,9 +23,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 100vh;
   font-family: 'Lato', sans-serif;
+  color: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -34,6 +48,10 @@ body::-webkit-scrollbar-thumb {
   background: #e73c7e;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   max-width: 1440px;
   margin: 10em auto;
@@ -41,9 +59,9 @@ body::-webkit-scrollbar-thumb {
 
 .main-wrapper {
   position: relative;
-  height: 1000px;
+  height: auto;
   margin: 0 1em;
-  padding: 2em;
+  padding: 3em;
 	border: 1px solid #fff;
 	border-radius: 0.5em;
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
@@ -65,13 +83,23 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section {
-  padding: 5em 0;
+  padding: 2em 0;
 
   &__name {
-    
+    font-size: var(--base-fs);
+    padding-bottom: 1em;
+    text-align: center;
   }
 
   &__content {
-
+    font-size: var(--base-fs);
   }
+}
+
+.mark-pink {
+  color: var(--pink);
+}
+
+.mark-orange {
+  color: var(--orange);
 }
