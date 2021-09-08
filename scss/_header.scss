@@ -1,0 +1,17 @@
+.header {
+  &__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+
+    ul {
+      list-style-type: none;
+    }
+    
+  }
+}
