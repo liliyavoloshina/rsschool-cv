@@ -1,12 +1,24 @@
+@mixin dots($count) {
+  $text-shadow: ();
+  @for $i from 0 through $count {
+    $text-shadow: $text-shadow,
+                 (-.5+(random()) * 3) + em
+                 (-.5+(random()) * 3) + em
+                 7px
+                 hsla(random() * 360, 100%, 50%,.9);
+  }
+  text-shadow: $text-shadow;
+}
+
 html {
   font: 5vmin/1.3 Serif;
-  overflow: hidden;
+  // overflow: hidden;
   background: #123;
 }
 
 body, head {
   display: block;
-  font-size: 52px;
+  // font-size: 52px;
   color: transparent;
 }
 
@@ -55,16 +67,4 @@ head::after {
   to {
     transform: rotate(360deg) scale(18) translateX(20px);
   }
-}
-
-@mixin dots($count) {
-  $text-shadow: ();
-  @for $i from 0 through $count {
-    $text-shadow: $text-shadow,
-                 (-.5+(random()) * 3) + em
-                 (-.5+(random()) * 3) + em
-                 7px
-                 hsla(random() * 360, 100%, 50%,.9);
-  }
-  text-shadow: $text-shadow;
 }
