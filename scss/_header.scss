@@ -9,28 +9,41 @@
   }
 
   &__nav {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 2em;
     font-size: 1.5em;
 
     .nav__list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       list-style-type: none;
+      transition: .4s ease;
 
       @media screen and (max-width: 768px) {
         & {
-          display: none;
+          top: -1000%;
+          flex-direction: column;
         }
+      }
+
+      &.opened {
+        top: 5em;
+        z-index: 1;
+        gap: 1em 0;
       }
     }
 
     .nav__link {
       text-decoration: none;
       transition: 0.2s ease;
-      color: var(--black-text);
+      color: #fff;
 
       &:hover {
         color: var(--orange);
@@ -69,14 +82,14 @@
   }
 }
 
-.change .bar1 {
+.opened .bar1 {
   transform: rotate(-45deg) translate(-8px, 6px);
 }
 
-.change .bar2 {
+.opened .bar2 {
   opacity: 0;
 }
 
-.change .bar3 {
+.opened .bar3 {
   transform: rotate(45deg) translate(-8px, -6px);
 }
