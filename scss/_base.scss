@@ -6,14 +6,14 @@
   --green: #23d5ab;
   --blue: #23a6d5;
   --black-text: #333;
-  --base-fs: 1.5em;
-  --head-fs: 1.6em;
+  --base-fs: 1.3em;
+  --head-fs: 1.8em;
 }
 
 @media screen and (max-width: 1024px) {
   :root {
     --base-fs: 1.3em;
-  --head-fs: 1.5em;
+    --head-fs: 1.5em;
   }
 }
 
@@ -37,11 +37,11 @@ body::-webkit-scrollbar {
   width: 1em;
   background-color: transparent;
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: #e73c7e;
   outline: none;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 ::selection {
@@ -62,31 +62,30 @@ ul {
   height: auto;
   margin: 0 1em;
   padding: 3em;
-	border: 1px solid #fff;
-	border-radius: 0.5em;
-	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-	overflow: hidden;
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		height: 100%;
-		content: '';
-		z-index: -1;
-		background-color: rgba(255, 255, 255, 0.3);
-		backdrop-filter: blur(10px) saturate(100%) contrast(45%)
-			brightness(130%);
-	}
+  border: 1px solid #fff;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+  }
 }
 
 .section {
   padding: 2em 0;
 
   &__name {
-    font-size: var(--base-fs);
+    font-size: var(--head-fs);
     padding-bottom: 1em;
     text-align: center;
   }

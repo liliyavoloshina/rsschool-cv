@@ -5,8 +5,8 @@
   --green: #23d5ab;
   --blue: #23a6d5;
   --black-text: #333;
-  --base-fs: 1.5em;
-  --head-fs: 1.6em;
+  --base-fs: 1.3em;
+  --head-fs: 1.8em;
 }
 
 @media screen and (max-width: 1024px) {
@@ -41,7 +41,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: #e73c7e;
   outline: none;
-  border-radius: .5em;
+  border-radius: 0.5em;
 }
 
 ::-moz-selection {
@@ -93,7 +93,7 @@ ul {
 }
 
 .section__name {
-  font-size: var(--base-fs);
+  font-size: var(--head-fs);
   padding-bottom: 1em;
   text-align: center;
 }
@@ -329,4 +329,24 @@ body {
   text-align: center;
   line-height: 2em;
   letter-spacing: 2px;
+}
+
+.work__link {
+  text-decoration: none;
+  color: var(--blue);
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.work__link:hover {
+  opacity: 0.5;
+}
+
+.work__project {
+  line-height: 2em;
+  letter-spacing: 2px;
+}
+
+.work__project + .work__project {
+  margin-top: 2em;
 }

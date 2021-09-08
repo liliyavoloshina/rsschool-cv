@@ -10,7 +10,7 @@
     gap: 2em;
 
     @media screen and (max-width: 1024px) {
-        flex-direction: column;
+      flex-direction: column;
     }
   }
 
@@ -41,5 +41,26 @@
     text-align: center;
     line-height: 2em;
     letter-spacing: 2px;
+  }
+}
+
+.work {
+  &__link {
+    text-decoration: none;
+    color: var(--blue);
+    transition: 0.1s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__project {
+    line-height: 2em;
+    letter-spacing: 2px;
+  }
+
+  &__project + &__project {
+    margin-top: 2em;
   }
 }
