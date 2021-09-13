@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 
 :root {
-  --text: #757575;
-  --accent: #e73c7e;
-  --link-color: #ffffe0;
+  --text: #615F5F;
+  --accent: #3672E9;
+  --link-color: #9B51E0;
   --base-fs: 1.3em;
   --head-fs: 1.8em;
 }
@@ -37,13 +37,13 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #e0c3fc;
+  background-color: #fff;
   outline: none;
   border-radius: 0.5em;
 }
 
 ::selection {
-  background: #e0c3fc;
+  background: var(--link-color);
 }
 
 ul {
@@ -70,6 +70,7 @@ a {
 
   @media screen and (max-width: 768px) {
     border-width: 10px;
+    margin: 150px auto;
   }
 }
 
@@ -98,6 +99,8 @@ a {
   padding: 2em 0;
 
   &__name {
+    // color: var(--accent);
+    font-weight: 700;
     font-size: var(--head-fs);
     padding-bottom: 1em;
   }
