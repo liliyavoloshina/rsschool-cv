@@ -123,7 +123,7 @@
   border-radius: 0.5em;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   padding: 0;
-  white-space: pre-wrap;
+  white-space: pre;
 }
 
 pre code.hljs {
@@ -131,14 +131,14 @@ pre code.hljs {
 }
 
 .hljs-keyword, .hljs {
-  color: #fff;
+  color: var(--text);
 }
 
 .hljs-deletion, .hljs-number, .hljs-quote, .hljs-selector-class, .hljs-selector-id, .hljs-string, .hljs-template-tag, .hljs-type {
-  color: var(--pink);
+  color: var(--accent);
 }
 .hljs-section, .hljs-title {
-  color: var(--pink);
+  color: var(--accent);
 }
 
 .video {
