@@ -1,68 +1,70 @@
-@mixin dots($count) {
-  $text-shadow: ();
-  @for $i from 0 through $count {
-    $text-shadow: $text-shadow,
-                 (-.5+(random()) * 3) + em
-                 (-.5+(random()) * 3) + em
-                 7px
-                 hsla(random() * 360, 100%, 50%,.9);
+.body-wrapper {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  overflow: hidden;
+  position: relative;
+  $particleSize: 20vmin;
+  $animationDuration: 6s;
+  $amount: 10;
+
+  span.circle {
+    background: linear-gradient(
+      321.81deg,
+      rgba(179, 157, 231, 0.56) 14.52%,
+      rgba(252, 233, 255, 0.56) 76.14%,
+      rgba(252, 233, 255, 0.56) 76.14%
+    );
+    color:  linear-gradient(
+      321.81deg,
+      rgba(179, 157, 231, 0.56) 14.52%,
+      rgba(252, 233, 255, 0.56) 76.14%,
+      rgba(252, 233, 255, 0.56) 76.14%);
+    width: $particleSize;
+    height: $particleSize;
+    border-radius: $particleSize;
+    backface-visibility: hidden;
+    position: absolute;
+    animation-name: move;
+    animation-duration: $animationDuration;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    $colors: (#583c87, #e45a84, #ffacac);
+    @for $i from 1 through $amount {
+      &:nth-child(#{$i}) {
+        // color: nth($colors, random(length($colors)));
+        // background: linear-gradient(321.81deg, rgba(179, 157, 231, 0.56) 14.52%, rgba(252, 233, 255, 0.56) 76.14%, rgba(252, 233, 255, 0.56) 76.14%);
+        top: random(100) * 1%;
+        left: random(100) * 1%;
+        animation-duration: (random($animationDuration * 10) / 10) * 1s + 10s;
+        animation-delay: random(($animationDuration + 10s) * 10) / 10 * -1s;
+        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+        $blurRadius: (random() + 0.5) * $particleSize * 0.5;
+        $x: if(random() > 0.5, -1, 1);
+        box-shadow: ($particleSize * 2 * $x) 0 $blurRadius currentColor;
+      }
+    }
   }
-  text-shadow: $text-shadow;
 }
 
-html {
-  font: 5vmin/1.3 Serif;
-  background: #123;
+@keyframes background {
+  0%,
+  100% {
+    background-image: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
 }
-
-body, head {
-  display: block;
-  color: transparent;
-}
-
-head::before, head::after,
-body::before, body::after {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 3em;
-  height: 3em;
-  content: '.';
-  mix-blend-mode: screen;
-  animation: 44s -27s move infinite ease-in-out alternate;
-}
-
-
-body::before {
-  @include dots(40);
-  animation-duration: 44s;
-  animation-delay: -27s;
-}
-
-body::after {
-  @include dots(40);
-  animation-duration: 43s;
-  animation-delay: -32s;
-}
-
-head::before {
-  @include dots(40);
-  animation-duration: 42s;
-  animation-delay: -23s;
-}
-
-head::after {
-  @include dots(40);
-  animation-duration: 41s;
-  animation-delay: -19s;
-}
-
 
 @keyframes move {
-  from {
-    transform: rotate(0deg) scale(12) translateX(-20px);
-  }
-  to {
-    transform: rotate(360deg) scale(18) translateX(20px);
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
