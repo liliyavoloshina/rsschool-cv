@@ -72,23 +72,22 @@ a:hover {
 .container {
   max-width: 1440px;
   margin: 50px auto;
+  border: 30px solid rgba(255, 255, 255, 0.24);
+  border-radius: 30px;
+  z-index: 1000;
 }
 
 .main-wrapper {
   position: relative;
   height: auto;
-  margin: 0 20px;
   z-index: 1000;
   color: #fff;
   font-size: 16px;
   padding: 3em;
   overflow: hidden;
   background: radial-gradient(100% 249.45% at 0% 2.78%, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
-  border: 16px solid rgba(255, 255, 255, 0.24);
-  -webkit-backdrop-filter: blur(22px);
-          backdrop-filter: blur(22px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 33px;
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
 }
 
 @media screen and (max-width: 768px) {
@@ -142,8 +141,6 @@ a:hover {
   width: 20vmin;
   height: 20vmin;
   border-radius: 20vmin;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   position: absolute;
   -webkit-animation-name: move;
           animation-name: move;
@@ -153,16 +150,116 @@ a:hover {
           animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
-  top: 15%;
+}
+
+.body-wrapper span.circle:nth-child(1) {
+  top: 20%;
+  left: 39%;
+  -webkit-animation-duration: 11.7s;
+          animation-duration: 11.7s;
+  -webkit-animation-delay: -1.3s;
+          animation-delay: -1.3s;
+  -webkit-transform-origin: -22vw -17vh;
+          transform-origin: -22vw -17vh;
+}
+
+.body-wrapper span.circle:nth-child(2) {
+  top: 24%;
+  left: 7%;
+  -webkit-animation-duration: 13.5s;
+          animation-duration: 13.5s;
+  -webkit-animation-delay: -9.7s;
+          animation-delay: -9.7s;
+  -webkit-transform-origin: -15vw 6vh;
+          transform-origin: -15vw 6vh;
+}
+
+.body-wrapper span.circle:nth-child(3) {
+  top: 66%;
+  left: 44%;
+  -webkit-animation-duration: 12.4s;
+          animation-duration: 12.4s;
+  -webkit-animation-delay: -3.8s;
+          animation-delay: -3.8s;
+  -webkit-transform-origin: 18vw 12vh;
+          transform-origin: 18vw 12vh;
+}
+
+.body-wrapper span.circle:nth-child(4) {
+  top: 49%;
+  left: 47%;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -7.2s;
+          animation-delay: -7.2s;
+  -webkit-transform-origin: 3vw 2vh;
+          transform-origin: 3vw 2vh;
+}
+
+.body-wrapper span.circle:nth-child(5) {
+  top: 3%;
+  left: 50%;
+  -webkit-animation-duration: 10.2s;
+          animation-duration: 10.2s;
+  -webkit-animation-delay: -7.6s;
+          animation-delay: -7.6s;
+  -webkit-transform-origin: 18vw 14vh;
+          transform-origin: 18vw 14vh;
+}
+
+.body-wrapper span.circle:nth-child(6) {
+  top: 97%;
+  left: 99%;
+  -webkit-animation-duration: 13.2s;
+          animation-duration: 13.2s;
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
+  -webkit-transform-origin: 17vw -6vh;
+          transform-origin: 17vw -6vh;
+}
+
+.body-wrapper span.circle:nth-child(7) {
+  top: 48%;
   left: 17%;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-delay: -8.2s;
-          animation-delay: -8.2s;
-  -webkit-transform-origin: 17vw 7vh;
-          transform-origin: 17vw 7vh;
-  -webkit-box-shadow: -40vmin 0 8.05607vmin currentColor;
-          box-shadow: -40vmin 0 8.05607vmin currentColor;
+  -webkit-animation-duration: 12.7s;
+          animation-duration: 12.7s;
+  -webkit-animation-delay: -4.5s;
+          animation-delay: -4.5s;
+  -webkit-transform-origin: -18vw -8vh;
+          transform-origin: -18vw -8vh;
+}
+
+.body-wrapper span.circle:nth-child(8) {
+  top: 95%;
+  left: 58%;
+  -webkit-animation-duration: 15.4s;
+          animation-duration: 15.4s;
+  -webkit-animation-delay: -13.4s;
+          animation-delay: -13.4s;
+  -webkit-transform-origin: -10vw -17vh;
+          transform-origin: -10vw -17vh;
+}
+
+.body-wrapper span.circle:nth-child(9) {
+  top: 38%;
+  left: 18%;
+  -webkit-animation-duration: 12.9s;
+          animation-duration: 12.9s;
+  -webkit-animation-delay: -14.9s;
+          animation-delay: -14.9s;
+  -webkit-transform-origin: 22vw -20vh;
+          transform-origin: 22vw -20vh;
+}
+
+.body-wrapper span.circle:nth-child(10) {
+  top: 49%;
+  left: 42%;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  -webkit-animation-delay: -10.6s;
+          animation-delay: -10.6s;
+  -webkit-transform-origin: -19vw 4vh;
+          transform-origin: -19vw 4vh;
 }
 
 @-webkit-keyframes background {
