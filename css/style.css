@@ -154,113 +154,113 @@ a:hover {
 }
 
 .body-wrapper span.circle:nth-child(1) {
-  top: 8%;
-  left: 67%;
-  -webkit-animation-duration: 14.1s;
-          animation-duration: 14.1s;
-  -webkit-animation-delay: -3.5s;
-          animation-delay: -3.5s;
-  -webkit-transform-origin: 23vw -1vh;
-          transform-origin: 23vw -1vh;
+  top: 50%;
+  left: 39%;
+  -webkit-animation-duration: 16s;
+          animation-duration: 16s;
+  -webkit-animation-delay: -11.5s;
+          animation-delay: -11.5s;
+  -webkit-transform-origin: 22vw 18vh;
+          transform-origin: 22vw 18vh;
 }
 
 .body-wrapper span.circle:nth-child(2) {
-  top: 40%;
-  left: 13%;
-  -webkit-animation-duration: 14.2s;
-          animation-duration: 14.2s;
-  -webkit-animation-delay: -2.4s;
-          animation-delay: -2.4s;
-  -webkit-transform-origin: 11vw 11vh;
-          transform-origin: 11vw 11vh;
+  top: 17%;
+  left: 8%;
+  -webkit-animation-duration: 10.4s;
+          animation-duration: 10.4s;
+  -webkit-animation-delay: -10.7s;
+          animation-delay: -10.7s;
+  -webkit-transform-origin: 3vw -21vh;
+          transform-origin: 3vw -21vh;
 }
 
 .body-wrapper span.circle:nth-child(3) {
-  top: 81%;
-  left: 39%;
-  -webkit-animation-duration: 10.3s;
-          animation-duration: 10.3s;
-  -webkit-animation-delay: -4.8s;
-          animation-delay: -4.8s;
-  -webkit-transform-origin: 19vw -8vh;
-          transform-origin: 19vw -8vh;
+  top: 92%;
+  left: 85%;
+  -webkit-animation-duration: 13.4s;
+          animation-duration: 13.4s;
+  -webkit-animation-delay: -14.1s;
+          animation-delay: -14.1s;
+  -webkit-transform-origin: 19vw 10vh;
+          transform-origin: 19vw 10vh;
 }
 
 .body-wrapper span.circle:nth-child(4) {
-  top: 89%;
-  left: 29%;
-  -webkit-animation-duration: 10.1s;
-          animation-duration: 10.1s;
-  -webkit-animation-delay: -3.9s;
-          animation-delay: -3.9s;
-  -webkit-transform-origin: -10vw -14vh;
-          transform-origin: -10vw -14vh;
+  top: 99%;
+  left: 70%;
+  -webkit-animation-duration: 12.5s;
+          animation-duration: 12.5s;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
+  -webkit-transform-origin: -13vw 11vh;
+          transform-origin: -13vw 11vh;
 }
 
 .body-wrapper span.circle:nth-child(5) {
-  top: 21%;
-  left: 76%;
-  -webkit-animation-duration: 11.7s;
-          animation-duration: 11.7s;
-  -webkit-animation-delay: -12.1s;
-          animation-delay: -12.1s;
-  -webkit-transform-origin: -23vw -2vh;
-          transform-origin: -23vw -2vh;
+  top: 56%;
+  left: 71%;
+  -webkit-animation-duration: 12.9s;
+          animation-duration: 12.9s;
+  -webkit-animation-delay: -4.6s;
+          animation-delay: -4.6s;
+  -webkit-transform-origin: -15vw 23vh;
+          transform-origin: -15vw 23vh;
 }
 
 .body-wrapper span.circle:nth-child(6) {
-  top: 12%;
-  left: 73%;
-  -webkit-animation-duration: 14.5s;
-          animation-duration: 14.5s;
-  -webkit-animation-delay: -3.8s;
-          animation-delay: -3.8s;
-  -webkit-transform-origin: 9vw 24vh;
-          transform-origin: 9vw 24vh;
+  top: 81%;
+  left: 69%;
+  -webkit-animation-duration: 15.7s;
+          animation-duration: 15.7s;
+  -webkit-animation-delay: -4s;
+          animation-delay: -4s;
+  -webkit-transform-origin: 5vw -22vh;
+          transform-origin: 5vw -22vh;
 }
 
 .body-wrapper span.circle:nth-child(7) {
-  top: 76%;
-  left: 99%;
-  -webkit-animation-duration: 15s;
-          animation-duration: 15s;
-  -webkit-animation-delay: -16s;
-          animation-delay: -16s;
-  -webkit-transform-origin: -21vw -8vh;
-          transform-origin: -21vw -8vh;
+  top: 18%;
+  left: 96%;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: -6.8s;
+          animation-delay: -6.8s;
+  -webkit-transform-origin: -7vw 23vh;
+          transform-origin: -7vw 23vh;
 }
 
 .body-wrapper span.circle:nth-child(8) {
-  top: 5%;
-  left: 7%;
-  -webkit-animation-duration: 15.3s;
-          animation-duration: 15.3s;
-  -webkit-animation-delay: -12.8s;
-          animation-delay: -12.8s;
-  -webkit-transform-origin: 21vw -24vh;
-          transform-origin: 21vw -24vh;
+  top: 87%;
+  left: 72%;
+  -webkit-animation-duration: 15.9s;
+          animation-duration: 15.9s;
+  -webkit-animation-delay: -14.9s;
+          animation-delay: -14.9s;
+  -webkit-transform-origin: 17vw 14vh;
+          transform-origin: 17vw 14vh;
 }
 
 .body-wrapper span.circle:nth-child(9) {
-  top: 2%;
-  left: 26%;
-  -webkit-animation-duration: 10.8s;
-          animation-duration: 10.8s;
-  -webkit-animation-delay: -1.5s;
-          animation-delay: -1.5s;
-  -webkit-transform-origin: -2vw -2vh;
-          transform-origin: -2vw -2vh;
+  top: 73%;
+  left: 24%;
+  -webkit-animation-duration: 11.4s;
+          animation-duration: 11.4s;
+  -webkit-animation-delay: -2.2s;
+          animation-delay: -2.2s;
+  -webkit-transform-origin: 19vw 17vh;
+          transform-origin: 19vw 17vh;
 }
 
 .body-wrapper span.circle:nth-child(10) {
-  top: 45%;
-  left: 16%;
-  -webkit-animation-duration: 15.2s;
-          animation-duration: 15.2s;
-  -webkit-animation-delay: -13.5s;
-          animation-delay: -13.5s;
-  -webkit-transform-origin: 3vw -4vh;
-          transform-origin: 3vw -4vh;
+  top: 10%;
+  left: 53%;
+  -webkit-animation-duration: 13s;
+          animation-duration: 13s;
+  -webkit-animation-delay: -5.1s;
+          animation-delay: -5.1s;
+  -webkit-transform-origin: -21vw -4vh;
+          transform-origin: -21vw -4vh;
 }
 
 .body-wrapper span.circle.hidden {
@@ -338,7 +338,7 @@ a:hover {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(54, 114, 233, 0.6);
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-transition: .3s ease-in;
   transition: .3s ease-in;
@@ -687,8 +687,8 @@ a:hover {
 
 .projects .project__tech li {
   display: inline;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 10px;
+  border-radius: 30px;
   font-size: 15px;
   background: rgba(255, 255, 255, 0.562);
 }
@@ -706,14 +706,6 @@ a:hover {
 .projects .project img:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.projects .project a {
-  display: block;
-}
-
-.projects .project a:hover {
-  opacity: 1;
 }
 
 .code code {
