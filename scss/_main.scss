@@ -47,6 +47,62 @@
   flex: 500px;
 }
 
+.skills__item {
+  display: flex;
+  gap: 1em;
+
+  & + & {
+    margin-top: 1em;
+  }
+}
+
+.skill {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.html-skill {
+  background-image: url('../icons/html.svg');
+}
+
+.css-skill {
+  background-image: url('../icons/css.svg');
+}
+
+.sass-skill {
+  background-image: url('../icons/sass.svg');
+}
+
+.js-skill {
+  background-image: url('../icons/javascript.svg');
+}
+
+.vue-skill {
+  background-image: url('../icons/vue.svg');
+}
+
+.vuet-skill {
+  background-image: url('../icons/vuetify.svg');
+}
+
+.nuxt-skill {
+  background-image: url('../icons/nuxt.svg');
+}
+
+.tail-skill {
+  background-image: url('../icons/tailwind.svg');
+}
+
+.fig-skill {
+  background-image: url('../icons/figma.svg');
+}
+
+.photo-skill {
+  background-image: url('../icons/photoshop.svg');
+}
+
 .projects {
   &__row {
     display: flex;
@@ -136,9 +192,15 @@
   color: var(--link-color);
 }
 
+.hljs-number {
+  color: rgb(252, 63, 195);
+}
+
+.hljs-params {
+  color: rgb(1, 167, 56);
+}
+
 .hljs-deletion,
-.hljs-number,
-.hljs-quote,
 .hljs-selector-class,
 .hljs-selector-id,
 .hljs-string,
@@ -146,6 +208,7 @@
 .hljs-type {
   color: var(--accent);
 }
+
 .hljs-section,
 .hljs-title {
   color: var(--accent);
