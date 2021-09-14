@@ -1,15 +1,28 @@
 const navBtn = document.querySelector('#navBtn'),
-  navList = document.querySelector('#navList')
+  navList = document.querySelector('#navList'),
+  removeBubbles = document.querySelector('#removeBubbles'),
+  bubbles = document.querySelectorAll('.circle')
 
 navBtn.addEventListener('click', toggleMenu)
+removeBubbles.addEventListener('click', toggleBubbles)
 
 function toggleMenu() {
   navBtn.classList.toggle('opened')
   navList.classList.toggle('opened')
 }
 
-document.addEventListener('click', function (event) {
-  if (navList.classList.contains('opened') && !event.target.closest('#navBtn')) {
+function toggleBubbles() {
+  bubbles.forEach(b => b.classList.toggle('hidden'))
+  removeBubbles.textContent === 'Remove Bubbles'
+    ? (removeBubbles.textContent = 'Add Bubbles!')
+    : (removeBubbles.textContent = 'Remove Bubbles')
+}
+
+document.addEventListener('click', function(event) {
+  if (
+    navList.classList.contains('opened') &&
+    !event.target.closest('#navBtn')
+  ) {
     navBtn.classList.remove('opened')
     navList.classList.remove('opened')
   }

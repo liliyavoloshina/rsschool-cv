@@ -23,8 +23,10 @@
     animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    opacity: 1;
+    transition: opacity .2s ease-in;
 
-    @for $i from 1 through 13 {
+    @for $i from 1 through 10 {
       &:nth-child(#{$i}) {
         top: random(100) * 1%;
         left: random(100) * 1%;
@@ -32,6 +34,10 @@
         animation-delay: random((6s + 10s) * 10) / 10 * -1s;
         transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
       }
+    }
+
+    &.hidden {
+      opacity: 0;
     }
   }
 }

@@ -3,11 +3,33 @@
 
   &__name {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
     text-transform: uppercase;
     color: var(--link-color);
+
+    @media screen and (max-width: 1024px) {
+     flex-direction: column;
+    }
+  }
+
+  &__btn {
+    padding: 1em 0.5em;
+    border: 5px solid rgba(255, 255, 255, 0.24);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--accent);
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .3s ease-in;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 
   .name-mark {
