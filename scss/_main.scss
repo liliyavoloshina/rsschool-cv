@@ -122,7 +122,6 @@
     display: flex;
     flex-direction: column;
     gap: 1em 0;
-    height: 400px;
     padding: 20px;
     border-radius: 20px;
     border: 10px solid rgba(255, 255, 255, 0.24);
@@ -130,8 +129,21 @@
     background: rgba(255, 255, 255, 0.3);
 
     &__img {
+      display: block;
+      height: 200px;
       border-radius: 20px;
-      height: 60%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: 0.7s ease;
+  
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
     }
 
     &__info {
@@ -160,17 +172,10 @@
       }
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 20px;
-      transition: 0.7s ease;
+    // @media screen and (max-width: 1024px) {
+    //   height: 500px;
+    // }
 
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
   }
 }
 
