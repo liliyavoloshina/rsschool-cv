@@ -102,6 +102,10 @@ a {
     padding: 1em;
     border-radius: 20px;
   }
+
+  @media screen and (max-width: 462px) {
+   padding: 10px;
+  }
 }
 
 .section {
@@ -122,6 +126,10 @@ a {
   @media screen and (max-width: 768px) {
     padding: 1em 0;
   }
+
+  @media screen and (max-width: 462px) {
+    padding: 10px;
+   }
 }
 
 .mark {
