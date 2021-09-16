@@ -1,5 +1,7 @@
 .main {
-  padding: 3em 0;
+  flex: 2 1;
+  min-width: 42%;
+  padding: 1em 0;
 }
 
 .about {
@@ -13,100 +15,12 @@
       flex-direction: column;
     }
   }
-
-  &__img {
-    flex: 250px 0 0;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    overflow: hidden;
-    border: 10px solid rgba(255, 255, 255, 0.24);
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-}
-
-.work-edu {
-  display: flex;
-  gap: 0 2em;
-  flex-wrap: wrap;
 }
 
 .work {
-  flex: 1 1 400px;
   &__project + &__project {
     margin-top: 2em;
   }
-}
-
-.education {
-  flex: 500px;
-}
-
-.skills__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 2em 4em;
-}
-
-.skills__item {
-  display: flex;
-  align-items: center;
-  gap: 0 20px;
-}
-
-.skill {
-  width: 40px;
-  height: 40px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.html-skill {
-  background-image: url('../icons/html.svg');
-}
-
-.css-skill {
-  background-image: url('../icons/css.svg');
-}
-
-.sass-skill {
-  background-image: url('../icons/sass.svg');
-}
-
-.js-skill {
-  background-image: url('../icons/javascript.svg');
-}
-
-.vue-skill {
-  background-image: url('../icons/vue.svg');
-}
-
-.vuet-skill {
-  background-image: url('../icons/vuetify.svg');
-}
-
-.nuxt-skill {
-  background-image: url('../icons/nuxt.svg');
-}
-
-.tail-skill {
-  background-image: url('../icons/tailwind.svg');
-}
-
-.fig-skill {
-  background-image: url('../icons/figma.svg');
-}
-
-.photo-skill {
-  background-image: url('../icons/photoshop.svg');
 }
 
 .projects {
@@ -124,7 +38,6 @@
     gap: 1em 0;
     padding: 20px;
     border-radius: 20px;
-    border: 10px solid rgba(255, 255, 255, 0.24);
     overflow: hidden;
     background: rgba(255, 255, 255, 0.3);
 
@@ -139,7 +52,7 @@
         object-fit: cover;
         border-radius: 20px;
         transition: 0.7s ease;
-  
+
         &:hover {
           transform: scale(1.2);
         }
@@ -171,11 +84,6 @@
         background: rgba(255, 255, 255, 0.562);
       }
     }
-
-    // @media screen and (max-width: 1024px) {
-    //   height: 500px;
-    // }
-
   }
 }
 
@@ -230,47 +138,5 @@
     height: 100%;
     border-radius: 0.5em;
     border: none;
-  }
-}
-
-.contacts {
-  &__link {
-    display: block;
-    height: 70px;
-    line-height: 70px;
-    padding-left: 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .discord {
-    background-image: url('../icons/discord.png');
-  }
-
-  .email {
-    background-image: url('../icons/email.png');
-  }
-
-  .telegram {
-    background-image: url('../icons/telegram.png');
-  }
-
-  .github {
-    background-image: url('../icons/github.png');
-  }
-
-  &__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1em 0;
-    @media screen and (max-width: 1024px) {
-      justify-content: space-evenly;
-    }
-  }
-
-  p {
-    word-wrap: break-word;
   }
 }

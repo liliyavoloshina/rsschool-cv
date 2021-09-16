@@ -2,8 +2,8 @@
 
 :root {
   --text: #3d3d3d;
-  --accent: #3672E9;
-  --link-color: #9B51E0;
+  --accent: #3672e9;
+  --link-color: #9b51e0;
   --base-fs: 1.3em;
   --head-fs: 1.8em;
 }
@@ -27,7 +27,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Quicksand', sans-serif;;
+  font-family: 'Quicksand', sans-serif;
   color: var(--text);
   font-weight: 700;
 }
@@ -63,7 +63,7 @@ a {
 
 .container {
   position: relative;
-  max-width: 1320px;
+  max-width: 1440px;
   margin: 50px auto;
   border: 30px solid rgba(255, 255, 255, 0.24);
   border-radius: 30px;
@@ -77,11 +77,15 @@ a {
 
 .main-wrapper {
   position: relative;
-  height: auto;
   z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3em;
+  height: auto;
+  padding: 2em;
   color: var(--text);
   font-size: 16px;
-  padding: 3em;
   overflow: hidden;
   background: radial-gradient(
     100% 249.45% at 0% 2.78%,
@@ -90,6 +94,10 @@ a {
   );
   backdrop-filter: blur(30px);
 
+  @media screen and (max-width: 1024px) {
+    row-gap: 1em;
+  }
+
   @media screen and (max-width: 768px) {
     padding: 1em;
     border-radius: 20px;
@@ -97,7 +105,7 @@ a {
 }
 
 .section {
-  padding: 3em 0;
+  padding: 2em 0;
 
   &__name {
     font-weight: 700;

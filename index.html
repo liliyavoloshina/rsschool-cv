@@ -39,7 +39,6 @@
             </button>
             <ul class="nav__list" id="navList">
               <li><a class="nav__link" href="#about">About</a></li>
-              <li><a class="nav__link" href="#skills">Skills</a></li>
               <li><a class="nav__link" href="#work">Work</a></li>
               <li><a class="nav__link" href="#education">Education</a></li>
               <li><a class="nav__link" href="#projects">Projects</a></li>
@@ -51,27 +50,15 @@
           </nav>
         </header>
 
-        <main class="main">
-          <section class="section about" id="about">
-            <h2 class="section__name">About Me</h2>
-            <div class="section__content about__content">
-              <figure class="about__img">
-                <img src="./img/avatar.jpg" alt="Lily's Avatar">
-                <figcaption>Web-dev</figcaption>
-              </figure>
-              <div class="about__desc">
-                <p>Self-taught <span class="mark">frontend-developer</span> with a year of experience using
-                  JavaScript, HTML, CSS.</p>
-                <p>I enjoy solving difficult tasks and always try to find the best solution to the problem.</p>
-                <p>While working as a <span class="mark">freelancer</span>, I have improved my time management
-                  skills and ability to work with
-                  minimum supervision.</p>
-              </div>
+        <aside class="aside">
+          <figure class="avatar">
+            <div class="avatar__wrapper">
+              <img src="./img/avatar.jpg" alt="Lily's Avatar">
             </div>
-          </section>
+            <figcaption>Frontend Developer</figcaption>
+          </figure>
 
-          <section class="section skills" id="skills">
-            <h2 class="section__name">Professional skills</h2>
+          <section class="section skills">
             <div class="section__content">
               <ul class="skills__list">
                 <li class="skills__item">
@@ -93,7 +80,7 @@
                   <div class="nuxt-skill skill"></div> Nuxt.js
                 </li>
                 <li class="skills__item">
-                  <div class="tail-skill skill"></div> TailwindCSS
+                  <div class="tail-skill skill"></div> Tailwind
                 </li>
                 <li class="skills__item">
                   <div class="vuet-skill skill"></div> Vuetify
@@ -108,52 +95,87 @@
             </div>
           </section>
 
-          <div class="work-edu">
-            <section class="section work" id="work">
-              <h2 class="section__name">Work Experience</h2>
-              <div class="section__content">
-                <article class="work__project">
-                  <h3><b><a href="https://peeplz.online/id4/" target="_blank">PEEPLZ</a></b></h3>
-                  <ul>
-                    <li>- freelance start-up project</li>
-                    <li>- my job was to develop client side and improve SEO</li>
-                  </ul>
-                </article>
-                <article class="work__project">
-                  <h3><b><a href="https://rocket-bot.trade/" target="_blank">Rocket Bot</a></b></h3>
-                  <ul>
-                    <li>- freelance project for trade business</li>
-                    <li>- my part of the job was to combine frontend and backend on Django</li>
-                  </ul>
-                </article>
-              </div>
-            </section>
+          <section class="section english" id="english">
+            <h2 class="section__name">English Level</h2>
+            <div class="section__content">
+              <p>My English level - B1 (Intermediate)</p>
+            </div>
+          </section>
 
-            <section class="section education" id="education">
-              <h2 class="section__name">Educational Background</h2>
-              <div class="section__content">
+          <section class="section contacts" id="contact">
+            <h2 class="section__name">Contacts</h2>
+            <div class="section__content contacts__content">
+              <a class="contacts__link" href="liliya#7076" title="Discord"><div class="img discord"></div>liliya#7076</a>
+              <a class="contacts__link" href="mailto:liliyavoloshine@gmail.com"
+                title="Emall"><div class="img email"></div>liliyavoloshine@gmail.com</a>
+              <a class="contacts__link" href="https://t.me/lilivoloshina" title="Telegram"><div class="img telegram"></div>@lilivoloshina</a>
+              <a class="contacts__link" href="https://t.me/lilivoloshina" title="Telegram"><div class="img github"></div>@lilivoloshina</a>
+            </div>
+          </section>
+        </aside>
+
+        <main class="main">
+          <section class="section about" id="about">
+            <h2 class="section__name">About Me</h2>
+            <div class="section__content about__content">
+
+              <div class="about__desc">
+                <p>Self-taught <span class="mark">frontend-developer</span> with a year of experience using
+                  JavaScript, HTML, CSS.</p>
+                <p>I enjoy solving difficult tasks and always try to find the best solution to the problem.</p>
+                <p>While working as a <span class="mark">freelancer</span>, I have improved my time management
+                  skills and ability to work with
+                  minimum supervision.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section work" id="work">
+            <h2 class="section__name">Work Experience</h2>
+            <div class="section__content">
+              <article class="work__project">
+                <h3><b><a href="https://peeplz.online/id4/" target="_blank">PEEPLZ</a></b></h3>
                 <ul>
-                  <li><a href="https://www.coursera.org/learn/python-osnovy-programmirovaniya/home/welcome"
-                      target="_blank">"Основы
-                      программирования на Python"</a> - Coursera</li>
-                  <li><a href="https://www.codecademy.com/profiles/liliyaVoloshina1918533430" target="_blank">HTML, CSS
-                      Courses</a> - CodeAcademy</li>
-                  <li><a href="https://www.sololearn.com/learning/1024" target="_blank">"JavaScript"</a> - SoloLearn
-                  </li>
-                  <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/">"Responsive Web
-                      Design"</a>,<br />
-                    <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
-                      target="_blank">"JavaScript
-                      Algorithms and Data Structures"</a> - freeCodeCamp</li>
-                  <li><a href="https://frontendmasters.com/courses/vue-nuxt-apps/" target="_blank">"Building
-                      Applications
-                      with
-                      Vue & Nuxt"</a> - FrontendMasters</li>
+                  <li>- freelance start-up project</li>
+                  <li>- my job was to develop client side and improve SEO</li>
                 </ul>
-              </div>
-            </section>
-          </div>
+              </article>
+              <article class="work__project">
+                <h3><b><a href="https://rocket-bot.trade/" target="_blank">Rocket Bot</a></b></h3>
+                <ul>
+                  <li>- freelance project for trade business</li>
+                  <li>- my part of the job was to combine frontend and backend on Django</li>
+                </ul>
+              </article>
+            </div>
+          </section>
 
+          <section class="section education" id="education">
+            <h2 class="section__name">Educational Background</h2>
+            <div class="section__content">
+              <ul>
+                <li><a href="https://www.coursera.org/learn/python-osnovy-programmirovaniya/home/welcome"
+                    target="_blank">"Основы
+                    программирования на Python"</a> - Coursera</li>
+                <li><a href="https://www.codecademy.com/profiles/liliyaVoloshina1918533430" target="_blank">HTML, CSS
+                    Courses</a> - CodeAcademy</li>
+                <li><a href="https://www.sololearn.com/learning/1024" target="_blank">"JavaScript"</a> - SoloLearn
+                </li>
+                <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/">"Responsive Web
+                    Design"</a>,<br />
+                  <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/"
+                    target="_blank">"JavaScript
+                    Algorithms and Data Structures"</a> - freeCodeCamp</li>
+                <li><a href="https://frontendmasters.com/courses/vue-nuxt-apps/" target="_blank">"Building
+                    Applications
+                    with
+                    Vue & Nuxt"</a> - FrontendMasters</li>
+              </ul>
+            </div>
+          </section>
+        </main>
+
+        <section class="section">
           <section class="section projects" id="projects">
             <h2 class="section__name">Pet-Projects</h2>
             <div class="section__content projects__row">
@@ -174,6 +196,7 @@
                   </ul>
                 </div>
               </article>
+
               <article class="project">
                 <a class="project__img"
                   href="https://rolling-scopes-school.github.io/liliyavoloshina-JSFEPRESCHOOL/vertical-slider/"
@@ -191,6 +214,7 @@
                   </ul>
                 </div>
               </article>
+
               <article class="project">
                 <a class="project__img" href="https://liliyavoloshina.github.io/upbox/" target="_blank">
                   <img src="./img/upbox.jpg" alt="Project Upbox"></a>
@@ -206,12 +230,13 @@
                   </ul>
                 </div>
               </article>
+
               <article class="project">
                 <a class="project__img" href="https://thrift-shop.herokuapp.com/" target="_blank">
                   <img src="./img/thrift.jpg" alt="Project Thrift Shop"></a>
                 <div class="project__info">
-                  <h3 class="project__title"><a href="https://thrift-shop.herokuapp.com/"
-                      target="_blank">E-commerce Clothes</a></h3>
+                  <h3 class="project__title"><a href="https://thrift-shop.herokuapp.com/" target="_blank">E-commerce
+                      Clothes</a></h3>
                   <p class="project__desc">E-commerce Clothes</p>
                   <ul class="project__tech">
                     <li>HTML</li>
@@ -221,6 +246,7 @@
                   </ul>
                 </div>
               </article>
+
               <article class="project">
                 <a class="project__img" href="https://liliyavoloshina.github.io/meme-generator/" target="_blank">
                   <img src="./img/meme.jpg" alt="Project Meme Generator"></a>
@@ -235,6 +261,7 @@
                   </ul>
                 </div>
               </article>
+              
               <article class="project">
                 <a class="project__img" href="https://liliyavoloshina.github.io/itunes-vue3-typescript/"
                   target="_blank">
@@ -273,25 +300,7 @@
                 allowfullscreen></iframe>
             </div>
           </section>
-
-          <section class="section english" id="english">
-            <h2 class="section__name">English Level</h2>
-            <div class="section__content">
-              <p>My English level - B1 (Intermediate)</p>
-            </div>
-          </section>
-
-          <section class="section contacts" id="contact">
-            <h2 class="section__name">Contacts</h2>
-            <div class="section__content contacts__content">
-              <a class="contacts__link discord" href="liliya#7076" title="Discord">liliya#7076</a>
-              <a class="contacts__link email" href="mailto:liliyavoloshine@gmail.com"
-                title="Emall">liliyavoloshine@gmail.com</a>
-              <a class="contacts__link telegram" href="https://t.me/lilivoloshina" title="Telegram">@lilivoloshina</a>
-              <a class="contacts__link github" href="https://t.me/lilivoloshina" title="Telegram">@lilivoloshina</a>
-            </div>
-          </section>
-        </main>
+        </section>
 
         <footer class="footer">
           <a href="https://rs.school/js/">
