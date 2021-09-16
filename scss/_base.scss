@@ -110,13 +110,17 @@ a {
   &__name {
     font-weight: 700;
     font-size: var(--head-fs);
-    padding-bottom: 1em;
+    padding-bottom: .7em;
   }
 
   &__content {
     font-size: var(--base-fs);
     line-height: 2em;
     letter-spacing: 2px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 1em 0;
   }
 }
 
