@@ -1,7 +1,6 @@
 .main {
   flex: 2 1;
-  min-width: 42%;
-  padding: 1em 0;
+  min-width: 55%;
 }
 
 .about {
@@ -15,6 +14,10 @@
       flex-direction: column;
     }
   }
+}
+
+.education {
+  word-wrap: break-word;
 }
 
 .work {
