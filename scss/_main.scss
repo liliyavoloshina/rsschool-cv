@@ -130,10 +130,15 @@
 
 .video {
   &__content {
-    width: 100%;
+    width: 50%;
     height: 300px;
     border-radius: 0.5em;
     border: 10px solid rgba(255, 255, 255, 0.24);
+
+    @media screen and (max-width: 1024px) {
+      width: 100%;
+    }
+
   }
 
   iframe {
