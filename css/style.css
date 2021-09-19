@@ -187,133 +187,133 @@ a:hover {
 }
 
 .body-wrapper span.circle:nth-child(1) {
-  top: 9%;
-  left: 11%;
+  top: 33%;
+  left: 23%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 14.4s;
-          animation-duration: 14.4s;
-  -webkit-animation-delay: -7.5s;
-          animation-delay: -7.5s;
-  -webkit-transform-origin: 0vw -16vh;
-          transform-origin: 0vw -16vh;
+  -webkit-animation-duration: 11.7s;
+          animation-duration: 11.7s;
+  -webkit-animation-delay: -2.9s;
+          animation-delay: -2.9s;
+  -webkit-transform-origin: 24vw -13vh;
+          transform-origin: 24vw -13vh;
 }
 
 .body-wrapper span.circle:nth-child(2) {
-  top: 53%;
-  left: 57%;
+  top: 95%;
+  left: 74%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 10.8s;
-          animation-duration: 10.8s;
-  -webkit-animation-delay: -10.7s;
-          animation-delay: -10.7s;
-  -webkit-transform-origin: 0vw 6vh;
-          transform-origin: 0vw 6vh;
+  -webkit-animation-duration: 10.2s;
+          animation-duration: 10.2s;
+  -webkit-animation-delay: -7.8s;
+          animation-delay: -7.8s;
+  -webkit-transform-origin: -1vw 0vh;
+          transform-origin: -1vw 0vh;
 }
 
 .body-wrapper span.circle:nth-child(3) {
-  top: 14%;
-  left: 7%;
+  top: 5%;
+  left: 60%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 15.3s;
-          animation-duration: 15.3s;
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
-  -webkit-transform-origin: -2vw -11vh;
-          transform-origin: -2vw -11vh;
+  -webkit-animation-duration: 11.2s;
+          animation-duration: 11.2s;
+  -webkit-animation-delay: -2.6s;
+          animation-delay: -2.6s;
+  -webkit-transform-origin: 21vw -13vh;
+          transform-origin: 21vw -13vh;
 }
 
 .body-wrapper span.circle:nth-child(4) {
-  top: 61%;
-  left: 65%;
+  top: 15%;
+  left: 85%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 10.4s;
-          animation-duration: 10.4s;
-  -webkit-animation-delay: -1.6s;
-          animation-delay: -1.6s;
-  -webkit-transform-origin: 8vw 11vh;
-          transform-origin: 8vw 11vh;
+  -webkit-animation-duration: 10.2s;
+          animation-duration: 10.2s;
+  -webkit-animation-delay: -3.4s;
+          animation-delay: -3.4s;
+  -webkit-transform-origin: -4vw -9vh;
+          transform-origin: -4vw -9vh;
 }
 
 .body-wrapper span.circle:nth-child(5) {
-  top: 85%;
-  left: 26%;
+  top: 77%;
+  left: 56%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 11.4s;
-          animation-duration: 11.4s;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
-  -webkit-transform-origin: -20vw -4vh;
-          transform-origin: -20vw -4vh;
+  -webkit-animation-duration: 14.5s;
+          animation-duration: 14.5s;
+  -webkit-animation-delay: -8.4s;
+          animation-delay: -8.4s;
+  -webkit-transform-origin: 3vw 24vh;
+          transform-origin: 3vw 24vh;
 }
 
 .body-wrapper span.circle:nth-child(6) {
-  top: 49%;
-  left: 17%;
+  top: 40%;
+  left: 24%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 14.2s;
-          animation-duration: 14.2s;
-  -webkit-animation-delay: -2.1s;
-          animation-delay: -2.1s;
-  -webkit-transform-origin: 17vw 5vh;
-          transform-origin: 17vw 5vh;
+  -webkit-animation-duration: 13.2s;
+          animation-duration: 13.2s;
+  -webkit-animation-delay: -3.9s;
+          animation-delay: -3.9s;
+  -webkit-transform-origin: 22vw -2vh;
+          transform-origin: 22vw -2vh;
 }
 
 .body-wrapper span.circle:nth-child(7) {
-  top: 87%;
-  left: 72%;
+  top: 61%;
+  left: 32%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 12.2s;
-          animation-duration: 12.2s;
-  -webkit-animation-delay: -12.7s;
-          animation-delay: -12.7s;
-  -webkit-transform-origin: 14vw -17vh;
-          transform-origin: 14vw -17vh;
+  -webkit-animation-duration: 10.5s;
+          animation-duration: 10.5s;
+  -webkit-animation-delay: -3.9s;
+          animation-delay: -3.9s;
+  -webkit-transform-origin: 24vw -12vh;
+          transform-origin: 24vw -12vh;
 }
 
 .body-wrapper span.circle:nth-child(8) {
-  top: 49%;
-  left: 91%;
+  top: 36%;
+  left: 70%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 15.5s;
-          animation-duration: 15.5s;
-  -webkit-animation-delay: -9.5s;
-          animation-delay: -9.5s;
-  -webkit-transform-origin: 25vw -2vh;
-          transform-origin: 25vw -2vh;
+  -webkit-animation-duration: 13.7s;
+          animation-duration: 13.7s;
+  -webkit-animation-delay: -2.5s;
+          animation-delay: -2.5s;
+  -webkit-transform-origin: -20vw -22vh;
+          transform-origin: -20vw -22vh;
 }
 
 .body-wrapper span.circle:nth-child(9) {
-  top: 56%;
-  left: 72%;
+  top: 20%;
+  left: 89%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 14.6s;
-          animation-duration: 14.6s;
-  -webkit-animation-delay: -13.3s;
-          animation-delay: -13.3s;
-  -webkit-transform-origin: -5vw -16vh;
-          transform-origin: -5vw -16vh;
+  -webkit-animation-duration: 11.7s;
+          animation-duration: 11.7s;
+  -webkit-animation-delay: -1.7s;
+          animation-delay: -1.7s;
+  -webkit-transform-origin: 25vw 1vh;
+          transform-origin: 25vw 1vh;
 }
 
 .body-wrapper span.circle:nth-child(10) {
-  top: 95%;
-  left: 81%;
+  top: 45%;
+  left: 64%;
   -webkit-animation-duration: 10s;
           animation-duration: 10s;
-  -webkit-animation-duration: 12.4s;
-          animation-duration: 12.4s;
-  -webkit-animation-delay: -6.4s;
-          animation-delay: -6.4s;
-  -webkit-transform-origin: 6vw 11vh;
-          transform-origin: 6vw 11vh;
+  -webkit-animation-duration: 14.9s;
+          animation-duration: 14.9s;
+  -webkit-animation-delay: -14.1s;
+          animation-delay: -14.1s;
+  -webkit-transform-origin: -2vw 24vh;
+          transform-origin: -2vw 24vh;
 }
 
 .body-wrapper span.circle.hidden {
@@ -736,7 +736,7 @@ a:hover {
   background-image: url("../icons/github.png");
 }
 
-.contacts__content {
+.contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -752,7 +752,7 @@ a:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  .contacts__content {
+  .contacts__list {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;

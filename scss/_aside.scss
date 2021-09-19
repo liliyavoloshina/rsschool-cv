@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   padding: 2em;
-  // height: 50%;
   min-width: 335px;
   background: radial-gradient(
     100% 249.45% at 0% 2.78%,
@@ -161,7 +160,7 @@
     background-image: url('../icons/github.png');
   }
 
-  &__content {
+  &__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
