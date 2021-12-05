@@ -1,0 +1,142 @@
+.header {
+  flex-basis: 100%;
+  margin-bottom: 2em;
+
+  &__name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    text-transform: uppercase;
+    color: var(--link-color);
+
+    @media screen and (max-width: 1024px) {
+     flex-direction: column;
+    }
+
+    @media screen and (max-width: 462px) {
+      word-break: break-all;
+     }
+  }
+
+  &__btn {
+    padding: 1em 0.5em;
+    border: 5px solid rgba(255, 255, 255, 0.24);
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgba(54, 114, 233, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: .3s ease-in;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .name-mark {
+    color: var(--accent);
+  }
+
+  &__nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    font-size: 1.5em;
+
+
+    
+    .nav__list {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.4s ease;
+
+      @media screen and (max-width: 1024px) {
+        & {
+          top: -1000%;
+          flex-direction: column;
+        }
+      }
+
+      &.opened {
+        top: 5em;
+        z-index: 1;
+        gap: 1em 0;
+        padding: 2em;
+        border-radius: 20px;
+        background-color: rgba(17, 34, 51, 0.712);
+      }
+    }
+
+    .nav__link {
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+      color: rgba(54, 114, 233, 0.6);
+
+      &:hover {
+        opacity: 1;
+        color: var(--accent);
+      }
+
+      @media screen and (max-width: 1024px) {
+        color: #fff;
+      }
+    }
+
+    .nav__menu {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 5em;
+      height: 5em;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      cursor: pointer;
+      background-color: transparent;
+
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 40px;
+        height: 4px;
+        margin: 3px 0;
+        border-radius: 20px;
+        background-color: #fff;
+        transition: 0.4s;
+      }
+
+      &:hover .bar {
+        background-color: var(--accent);
+      }
+
+      @media screen and (max-width: 1024px) {
+        & {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.opened .bar1 {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.opened .bar2 {
+  opacity: 0;
+}
+
+.opened .bar3 {
+  transform: rotate(45deg) translate(-8px, -6px);
+}

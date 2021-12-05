@@ -1,0 +1,60 @@
+.body-wrapper {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 25px;
+  overflow: hidden;
+  position: relative;
+
+  span.circle {
+    background: linear-gradient(
+      321.81deg,
+      rgba(179, 157, 231, 0.56) 14.52%,
+      rgba(252, 233, 255, 0.56) 76.14%,
+      rgba(252, 233, 255, 0.56) 76.14%
+    );
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 20vmin;
+    position: absolute;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    opacity: 1;
+    transition: opacity .2s ease-in;
+
+    @for $i from 1 through 10 {
+      &:nth-child(#{$i}) {
+        top: random(100) * 1%;
+        left: random(100) * 1%;
+        animation-duration: 10s;
+        animation-duration: (random(6s * 10) / 10) * 1s + 10s;
+        animation-delay: random((6s + 10s) * 10) / 10 * -1s;
+        transform-origin: (random(50) - 25) * 1vw (random(50) - 25) * 1vh;
+      }
+    }
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes background {
+  0%,
+  100% {
+    background-image: hue-rotate(90deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
